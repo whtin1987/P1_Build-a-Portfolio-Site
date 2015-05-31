@@ -1,0 +1,166 @@
+body {
+	font-family: "Lato", sans-serif;
+	color: #5e5f26;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1000px;
+	width: 100%;
+}
+
+/*Flexbox and flex-wrap are used so that the portfolio boxes would be repositioned when viewport width is reduced*/
+.row {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.col-1 {
+	width: 8.33%;
+}
+
+.col-2 {
+	width: 16.66%;
+}
+
+.col-3 {
+	width: 25%;
+}
+
+.col-4 {
+	width: 33.33%;
+}
+
+.col-5 {
+	width: 41.66%;
+}
+
+.col-6 {
+	width: 50%;
+}
+
+.col-7 {
+	width: 58.33%;
+}
+
+.col-8 {
+	width: 66.66%;
+}
+
+.col-9 {
+	width: 75%;
+}
+
+.col-10 {
+	width: 83.33%;
+}
+
+.col-11 {
+	width: 91.66%;
+}
+
+.col-12 {
+	width: 100%;
+}
+
+.banner {
+	border-bottom: 5px solid black;
+}
+
+.icon-out-ring {
+	height: 120px;
+	width: 120px;
+	background-color: #f8981c;
+	border-radius: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+}
+
+.icon-in-ring {
+	height: 95px;
+	width: 95px;
+	background-color: white;
+	border-radius: 47.5px;
+	color: #f8981c;
+	text-align: center;
+	padding-top: 10px;
+	font: normal 700 80px "Philosopher", sans-serif;
+}
+
+.banner-name {
+	font-size: 70px;
+	text-align: right;
+	margin: 0;
+}
+
+.banner-title {
+	font-size: 25px;
+	text-align: right;
+	margin: 0;
+}	
+
+/*To create spaces above and below the middle image and override the default side margin of the <figure> tag*/
+.main-box {
+	margin: 30px 0 30px 0;
+}
+
+/*To ensure that the middle image stays centered in the viewport*/
+.main-box-col {
+	display: flex;
+	justify-content: space-around;
+	overflow: hidden;
+}
+
+/*To ensure that the middle image would not be resized due to change in viewport width*/
+.main-img {
+	min-width: 1000px;
+}
+
+.featured-work {
+	font-size: 35px;
+	font-weight: 700;
+	color: rgb(13, 43, 90);
+	padding-left: 10px;
+	justify-content: flex-start;
+	margin: 0;
+}
+
+.port-box {
+	text-align: center;
+	width: 333px;
+}
+
+.port-img-box {
+	margin: 10px 5px 10px 5px;
+}
+
+.port-img {
+	width: 100%;
+}
+
+.port-title {
+	font-size: 30px;
+	font-weight: 700;
+	color: black;
+	margin: 0;
+}
+
+@media only screen and (max-width: 700px) {
+	.banner-name {
+		font-size: 50px;
+	}
+	.banner-title {
+		font-size: 25px;
+	}
+	.featured-work {
+		justify-content: center;
+	}
+}
